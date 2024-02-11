@@ -11,11 +11,12 @@ import userRouter from "./Routes/userRoutes.js";
 dotenv.config();
 const app = express();
 const port = process.env.PORT;
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: `*`,
+//     credentials: true,
+//   })
+// );
 // app.disable("x-powered-by");
 // app.use(morgan("tiny"));
 app.use(express.json());
